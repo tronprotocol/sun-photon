@@ -1,7 +1,7 @@
 {
   "name": "sun-photon",
   "namespace": "tronprotocol",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sun-Photon - Simple development framework for Tron SunNetwork",
   "dependencies": {
     "@truffle/contract-sources": "^0.1.6",

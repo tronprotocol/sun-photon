@@ -33,7 +33,7 @@ function verifyURL(url) {
       vcsurl(url)
         .replace("github.com", "raw.githubusercontent.com")
         .replace(/#.*/, "") +
-        "/master/sun-photon.js"
+        "/bare-box/sun-photon.js"
     );
 
     var options = {
