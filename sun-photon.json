@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "README.md",
+    ".gitignore"
+  ],
+  "commands": {
+    "Compile": "sun-photon compile",
+    "Migrate": "sun-photon migrate",
+    "Test contracts": "sun-photon test"
+  },
+  "hooks": {
+    "post-unpack": "bash post-unpack.sh && rm post-unpack.sh && npm install"
+  }
+}
