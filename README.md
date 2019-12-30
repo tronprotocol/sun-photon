@@ -5,7 +5,7 @@
 sun-photon is a development framework for smart contract development on SUN Network (Layer 2 of TRON Network). Core functionality includes: 
 
 * smart contract compiling
-* smart contract deployemnt
+* smart contract deployment
 * smart contract testing
 
 ## Installation
