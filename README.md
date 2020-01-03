@@ -85,16 +85,13 @@ module.exports = {
     dappchain: {
       // Don't put your private key here:
       privateKey: process.env.PRIVATE_KEY_DAPPCHAIN,
-      /*
-Create a .env file (it must be gitignored) containing something like
 
-  export PRIVATE_KEY_DAPPCHAIN=4E7FECCB71207B867C495B51A9758B104B1D4422088A87F4978BE64636656243
+      /* Create a .env file (it must be gitignored) containing something like
+       * export PRIVATE_KEY_DAPPCHAIN=4E7FECCB71207B867C495B51A9758B104B1D4422088A87F4978BE64636656243
+       * Then, run the migration with:
+       * source .env && npx sun-photon migrate --network dappchain
+       **/
 
-Then, run the migration with:
-
-  source .env && npx sun-photon migrate --network dappchain
-
-*/
       userFeePercentage: 100,
       feeLimit: 1e8,
       mainFullHost: 'https://api.trongrid.io',
@@ -126,7 +123,7 @@ Then, run the migration with:
 
 ## Contract compilation
 
-Set correct solc version in tronbox.js and run command:
+Set correct solc version in sun-photon.js and run command:
 
 ```bash
 sun-photon compile
@@ -171,7 +168,7 @@ contract('Test', function(accounts) {
 });
 ```
 
-Run below command:
+Run below command, if you want to deploy test.sol to dappchain (spec. in sun-photon.js).
 
 ```bash
 source .env && sun-photon test ./test/test.js --network dappchain
