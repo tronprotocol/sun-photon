@@ -52,7 +52,7 @@
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
-    "electron": "^6.0.12",
+    "electron": "^15.5.5",
     "glob": "^7.1.2",
     "js-scrypt": "^0.2.0",
     "meta-npm": "^0.0.22",
